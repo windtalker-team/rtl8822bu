@@ -239,6 +239,7 @@ static struct usb_device_id rtw_usb_id_tbl[] = {
 	{USB_DEVICE(0x7392, 0xB822), .driver_info = RTL8822B}, /* Edimax - EW-7822ULC */
 	{USB_DEVICE(0x0b05, 0x184c), .driver_info = RTL8822B}, /* ASUS USB AC53 */
 	{USB_DEVICE(0x7392, 0xC822), .driver_info = RTL8822B}, /* Edimax - EW-7822UTC */
+	{USB_DEVICE(0x2001, 0x331c), .driver_info = RTL8822B}, /* D-Link - DWA-182 Rev D */
 	{USB_DEVICE_AND_INTERFACE_INFO(USB_VENDER_ID_REALTEK, 0xB82C, 0xff, 0xff, 0xff), .driver_info = RTL8822B}, /* Default ID */
 #endif /* CONFIG_RTL8822B */
 
