@@ -244,6 +244,7 @@ static struct usb_device_id rtw_usb_id_tbl[] = {
 	{USB_DEVICE(0x7392, 0xC822), .driver_info = RTL8822B}, /* Edimax - EW-7822UTC */
 	{USB_DEVICE(0x2001, 0x331c), .driver_info = RTL8822B}, /* D-Link - DWA-182 Rev D */
 	{USB_DEVICE(0x2357, 0x0115), .driver_info = RTL8822B}, /* Archer USB T4Uv3 */
+	{USB_DEVICE(0x0E66, 0x0025), .driver_info = RTL8822B}, /* Hawking Tech HW12ACU */
 	/*=== Customer ID ===*/
 	{USB_DEVICE_AND_INTERFACE_INFO(0x13b1, 0x0043, 0xff, 0xff, 0xff), .driver_info = RTL8822B}, /* Alpha - Alpha*/
 #endif /* CONFIG_RTL8822B */
