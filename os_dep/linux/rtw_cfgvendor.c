@@ -1399,7 +1399,8 @@ static const struct wiphy_vendor_command rtw_vendor_cmds[] = {
 			.subcmd = LSTATS_SUBCMD_GET_INFO
 		},
 		.flags = WIPHY_VENDOR_CMD_NEED_WDEV | WIPHY_VENDOR_CMD_NEED_NETDEV,
-		.doit = rtw_cfgvendor_lstats_get_info
+		.doit = rtw_cfgvendor_lstats_get_info,
+		.policy = VENDOR_CMD_RAW_DATA,
 	},
 	{
 		{
@@ -1407,7 +1408,8 @@ static const struct wiphy_vendor_command rtw_vendor_cmds[] = {
 			.subcmd = LSTATS_SUBCMD_SET_INFO
 		},
 		.flags = WIPHY_VENDOR_CMD_NEED_WDEV | WIPHY_VENDOR_CMD_NEED_NETDEV,
-		.doit = rtw_cfgvendor_lstats_set_info
+		.doit = rtw_cfgvendor_lstats_set_info,
+		.policy = VENDOR_CMD_RAW_DATA,
 	},
 	{
 		{
@@ -1415,7 +1417,8 @@ static const struct wiphy_vendor_command rtw_vendor_cmds[] = {
 			.subcmd = LSTATS_SUBCMD_CLEAR_INFO
 		},
 		.flags = WIPHY_VENDOR_CMD_NEED_WDEV | WIPHY_VENDOR_CMD_NEED_NETDEV,
-		.doit = rtw_cfgvendor_lstats_clear_info
+		.doit = rtw_cfgvendor_lstats_clear_info,
+		.policy = VENDOR_CMD_RAW_DATA,
 	},
 #endif /* CONFIG_RTW_CFGVEDNOR_LLSTATS */
 	{
@@ -1424,7 +1427,8 @@ static const struct wiphy_vendor_command rtw_vendor_cmds[] = {
 			.subcmd = WIFI_SUBCMD_GET_FEATURE_SET
 		},
 		.flags = WIPHY_VENDOR_CMD_NEED_WDEV | WIPHY_VENDOR_CMD_NEED_NETDEV,
-		.doit = rtw_cfgvendor_get_feature_set
+		.doit = rtw_cfgvendor_get_feature_set,
+		.policy = VENDOR_CMD_RAW_DATA,
 	},
 	{
 		{
@@ -1432,7 +1436,8 @@ static const struct wiphy_vendor_command rtw_vendor_cmds[] = {
 			.subcmd = WIFI_SUBCMD_GET_FEATURE_SET_MATRIX
 		},
 		.flags = WIPHY_VENDOR_CMD_NEED_WDEV | WIPHY_VENDOR_CMD_NEED_NETDEV,
-		.doit = rtw_cfgvendor_get_feature_set_matrix
+		.doit = rtw_cfgvendor_get_feature_set_matrix,
+		.policy = VENDOR_CMD_RAW_DATA,
 	}
 };
 
